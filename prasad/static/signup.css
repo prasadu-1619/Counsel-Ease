@@ -1,0 +1,164 @@
+body {
+    background-image: url('bg.png');
+    margin: 0; /* Add margin to remove default body margin */
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+/* nav bar start */
+.container {
+    background-color: #081B2E;
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position:sticky;
+    z-index: 50;
+}
+
+.container img {
+    width: 434px;
+    height: 57px;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container ul li {
+    margin-right: 20px;
+}
+
+.container ul li:last-child a {
+    margin-right: 0;
+    color:#388FE4;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li a:hover {
+    color: #ccc;
+}
+
+.container ul :nth-child(6) {
+    border: 3px solid white;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-size: 35px;
+}
+/* nav bar end */
+
+/* CSS for styling the form */
+.container1 {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #081B2E;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    padding-left:50px;
+    height: max-content;
+  }
+ .account{
+    color:#BDA0CB;
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 35px;
+    padding: top -20px;
+    padding-left: 10px;
+
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 280px;
+    padding: 10px;
+    margin: 5px 0;
+    display :grid;
+    border-radius: 18px;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    font-family: 'Sansita', sans-serif;
+    color:#000000 ;
+    opacity: 80%;
+    
+  }
+  
+  button {
+    background-color: #449F00;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Sansita', sans-serif;
+    height:40px;
+    margin-left: 60px;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #449F00;
+  }
+  
+  /* Style for eye icon */
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Style for 3D image */
+  .threeDImage {
+    position: absolute;
+    top: 50%;
+    right: -145px; /* Adjust the value according to your preference */
+    transform: translateY(-50%);
+    width: 90%; /* Adjust the width of the image */
+    height: 90%; /* Maintain aspect ratio */
+  }
+.already{
+    color:#ffffff;
+    font-size: 15px;
+    font-family: 'Sansita', sans-serif;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+.already a{
+    color:#ffffff;
+    font-size: 15px;
+    font-family: 'Sansita', sans-serif;
+    cursor: pointer;
+}
+button[type="submit"]{
+    padding-bottom: 10px;
+    padding-top:5px
+}
+.eye {
+  position: absolute;
+  top: 50%; /* Adjust vertically to align with the middle of the input field */
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

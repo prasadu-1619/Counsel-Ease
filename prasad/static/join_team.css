@@ -1,0 +1,127 @@
+body {
+    background-image: url('bg.png');
+    margin: 0; /* Add margin to remove default body margin */
+    font-family: 'Sansita', sans-serif;
+    font-size: 25px;
+    position: relative;
+}
+/* nav bar start */
+.container {
+    background-color: #081B2E;
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position:sticky;
+    z-index: 50;
+}
+
+.container img {
+    width: 434px;
+    height: 57px;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container ul li {
+    margin-right: 20px;
+}
+
+.container ul li:last-child a {
+    margin-right: 0;
+    color:#388FE4;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li a:hover {
+    color: #ccc;
+}
+
+.container ul :nth-child(6) {
+    border: 3px solid white;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-size: 35px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 280px;
+  padding: 10px;
+  margin: 5px 0;
+  display :grid;
+  border-radius: 18px;
+  box-sizing: border-box;
+  background-color: #D9D9D9;
+  font-family: 'Sansita', sans-serif;
+  color:#000000 ;
+  opacity: 80%;
+  margin-left: 160px;
+
+}
+.container1{
+    background-color: #081B2E;
+    text-align: center;
+    background-color: #081B2E;
+    border-radius: 50px;
+    margin-left: 400px;
+    margin-top: 70px;
+    margin-right:300px;
+     height: auto;
+    padding-top: 8px;
+    width:600px
+}
+
+h2{
+    font-size: 40px;
+    color:#ffffff ;
+    font-size:35px;
+    margin-bottom: 10px;
+    margin-top:10px
+  }
+  h3{
+    color:#ffffff;
+    
+  }
+  p{
+    color: #ffffff;
+  }
+  form{
+    color: #ffffff;}
+
+  button{
+        background-color: #449F00;
+        color: rgb(0, 0, 0);
+        padding: 5px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 200px;
+        font-size: 20px;
+        font-family: 'Sansita', sans-serif;
+        height:40px;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom:20px
+    }
+    button:hover {
+        background-color: #285902;}
+   

@@ -1,0 +1,178 @@
+body {
+    background-image: url('bg.png');
+    margin: 0; /* Add margin to remove default body margin */
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+}
+.container {
+    background-color: #081B2E;
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position:sticky;
+    z-index: 50;
+}
+
+.container img {
+    width: 434px;
+    height: 57px;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container ul li {
+    margin-right: 20px;
+}
+
+.container ul li:last-child a {
+    margin-right: 0;
+    color:#388FE4;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li a:hover {
+    color: #ccc;
+}
+
+.container ul :nth-child(6) {
+    border: 3px solid white;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-size: 35px;
+}
+.log{
+    background-color: #081B2E;
+    margin-left :350px;
+    margin-right :350px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    display:flex;
+    position: relative;
+   
+}
+.welcome {
+    font-family: "Rubik Moonrocks", sans-serif;
+    color: #7EB655;
+    padding-top: 30px;
+    padding-left:0px;
+    position: absolute;
+    left: 75px;
+    top: -10px; 
+    bottom:10px;  
+    font-size: 40px;
+}
+.login img{
+    height:350px;
+    width:450px;
+    padding-top:50px;
+    display:flex;
+    margin-left:-30px
+}
+.login-container {
+    border-radius: 30px;
+    text-align: center;
+    border:2px solid #D9D9D9;
+    margin-top: 30px;
+
+ }
+  
+.login-container  {
+    top:10px;
+    margin-bottom: 20px;
+    color:#BDA0CB;
+    position: absolute;
+    right:40px;
+    margin-top: 50px;
+   
+}
+  
+.input-field {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    opacity: 70%;
+    margin: 10px;
+    
+}
+  
+.password-container {
+    position: relative;
+  }
+  
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #7EB655;
+    color: #030303;
+    cursor: pointer;
+    font-family: 'Sansita', sans-serif;
+    font-size: 20px;
+ }
+  
+.btn:hover {
+    background-color: #7EB655;
+}
+  
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #ffffff;
+    opacity:80%;
+    margin:10px
+}
+.login-container a {
+    font-size: 12px;
+
+}
+.ac{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 12px;
+    font-family: 'Sansita', sans-serif;
+    opacity:80%
+}
+    
+.ac a{
+    color:#ffffff;
+    font-size: 12px;
+    opacity:80%;
+    font-family: 'Sansita', sans-serif;
+}
+.head{
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 40px;
+    padding-top: 10px;
+}

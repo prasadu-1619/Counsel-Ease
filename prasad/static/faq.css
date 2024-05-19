@@ -1,0 +1,95 @@
+/* Reset default margin and padding */
+body {
+    
+    background-image: url('bg.png');
+    margin: 0; /* Add margin to remove default body margin */
+    font-family: 'Sansita', sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+/* nav bar start */
+.container {
+background-color: #081B2E;
+font-family: 'Sansita', sans-serif;
+font-size: 30px;
+color: #ffffff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 13px;
+padding-bottom: 13px;
+padding-right: 20px;
+padding-left: 20px;
+position:sticky;
+z-index: 50;
+}
+
+.container img {
+width: 434px;
+height: 57px;
+}
+
+.container ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.container ul li {
+margin-right: 20px;
+}
+
+.container ul li:last-child a {
+margin-right: 0;
+color:#388FE4;
+}
+
+.container ul li a {
+text-decoration: none;
+color: white;
+}
+
+.container ul li a:hover {
+color: #ccc;
+}
+
+.container ul :nth-child(6) {
+border: 3px solid white;
+border-radius: 12px;
+padding-left: 12px;
+padding-right: 12px;
+padding-bottom: 6px;
+font-size: 35px;
+} 
+
+  
+  .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #0066ff;
+  }
+  
+  p {
+    line-height: 1.6;
+    color: #050000;
+  }
+  
+  
+  
