@@ -1,1 +1,11 @@
-pyotp
+Flask==2.2.3
+sqlite3
+flask_mail==0.9.1
+pyotp==2.6.0
+google-auth==2.20.0
+google-auth-oauthlib==1.0.0
+google-auth-httplib2==0.1.0
+google-api-python-client==2.94.0
+httplib2==0.22.0
+oauth2client==4.1.3
+smtplib
