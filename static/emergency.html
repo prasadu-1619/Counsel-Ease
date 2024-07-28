@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="emergency.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="container">
+        <img src="logo.svg" alt="logo" >
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="explore.html">SERVICES</a></li>
+            <li><a href="joinourteam.html">JOIN OUR TEAM</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="developers.html">DEVELOPERS</a></li>
+            <li><a href="/login">LOGIN</a></li>
+        </ul></nav>
+
+<div class="container1">
+    <h2>Emergency Contact</h2>
+
+    <form id="emergencyForm" action="https://formspree.io/f/xkndpzjg" method="POST">
+        <label for="contactName">Name:</label>
+        <input type="text" id="contactName" name="contactName" placeholder="Enter your name" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+<br>
+        <input type="submit" value="Send">
+    </form>
+
+    
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    background-image: url('bg.png');
+    margin: 0; /* Add margin to remove default body margin */
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+/* nav bar start */
+.container {
+    background-color: #081B2E;
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position:sticky;
+    z-index: 50;
+}
+
+.container img {
+    width: 434px;
+    height: 57px;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container ul li {
+    margin-right: 20px;
+}
+
+.container ul li:last-child a {
+    margin-right: 0;
+    color:#388FE4;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li a:hover {
+    color: #ccc;
+}
+
+.container ul :nth-child(6) {
+    border: 3px solid white;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-size: 35px;
+}
+/* nav bar end */
+
+h2{
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+button{
+    background-color: #449F00;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Sansita', sans-serif;
+    height:40px;
+    margin-left: 60px;
+    text-align: center;
+}
+button:hover {
+    background-color: #2e6305;
+  }
+  
+input[type="text"] {
+  width: 280px;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: #D9D9D9;
+  font-family: 'Sansita', sans-serif;
+  color:#000000 ;
+  opacity: 80%
+  
+}
+.cont1{
+    text-align: center;
+    align-items: center;
+    background-color: #081B2E;
+  border-radius: 50px;
+  margin-left: 300px;
+  margin-top: 100px;
+  margin-right:300px;
+  height: 300px;
+  padding-top: 30px;
+}
+p{
+    text-align: center;
+    color: #ffffff;
+}
+form{
+    text-align: center;
+    color:#ffffff;
+}

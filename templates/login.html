@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav class="container">
+        <img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" >
+        <ul>
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li><a href="{{ url_for('static', filename='explore.html')}}">SERVICES</a></li>
+            <li><a href="{{ url_for('static', filename='joinourteam.html')}}">JOIN OUR TEAM</a></li>
+            <li><a href="{{ url_for('static', filename='faq.html')}}">FAQ</a></li>
+            <li><a href="{{ url_for('static', filename='developers.html')}}">DEVELOPERS</a></li>
+            <li><a href="login">LOGIN</a></li>
+        </ul>
+     </nav>
+     <div class="log">
+        <div class="welcome">WELCOME</div>
+        <div class="login">
+            <img src="{{ url_for('static', filename='welcome.png') }}" alt="Welcome">
+        </div>
+        <div class="login-container">
+            <div class="head">Login</div>
+            <form action="/login" method="POST">
+
+              <input type="email" class="input-field" name="email" placeholder="Email" required>
+              <div class="password-container">
+                <input type="password" class="input-field" id="password"  name="password" placeholder="Password" required>
+                <span toggle="#password" class="eye"></span>
+              </div>
+              <a href="{{ url_for('forgot_password') }}" class="forgot-password">Forgot Password?</a>
+              <button type="submit" class="btn">Sign In</button>
+            </form>
+            <div class="ac">
+              <p>Don't have an account ? <a href="signup">Create an account</a></p>
+            </div>
+          </div>
+          <script src="{{ url_for('static', filename='login.js') }}"></script>
+    </div>
+    
+</body>
+</html>

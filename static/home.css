@@ -1,0 +1,267 @@
+body {
+    background-image: url('bg.png');
+    margin: 0; /* Add margin to remove default body margin */
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+/* nav bar start */
+.container {
+    background-color: #081B2E;
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position:sticky;
+    z-index: 50;
+}
+
+.container img {
+    width: 434px;
+    height: 57px;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container ul li {
+    margin-right: 20px;
+}
+
+.container ul li:last-child a {
+    margin-right: 0;
+    color:#388FE4;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li a:hover {
+    color: #ccc;
+}
+
+.container ul :nth-child(6) {
+    border: 3px solid white;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-size: 35px;
+}
+/* nav bar end */
+.container1{
+    background-color: #081B2E;
+    font-family: 'Sansita', sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+
+}
+.container1 {
+    display: flex;
+    border-radius: 20px;
+    margin-left: 83px;
+    margin-top: 30px;
+    margin-right:83px;
+
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing between text and image */
+    padding-left: 40px;
+
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 98%;
+    height: 100%;
+    border-radius: 25px;
+    
+}
+
+.text :nth-child(6) a {
+    border:3px solid #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    width: 175px;
+    padding: 8px;
+    text-decoration: none;
+    margin-left: 170px;
+}
+.text :nth-child(5) {
+    
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 40px;
+    text-align:center;
+    
+}
+
+.text :nth-child(4) a {
+    border:3px solid #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    width: 175px;
+    padding:8px;
+    text-decoration: none;
+    margin-left :150px;
+
+}
+.text :nth-child(3) {
+    color:#388FE4
+}
+
+.text a{
+    color:#f3f3f3
+}
+.p pre{
+    font-family: 'Sansita', sans-serif;
+    font-size: 30px;
+    text-align:center;
+    padding: 20px;
+}
+.steps {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.steps :first-child a {
+    background-color: #081B2E;
+    position:absolute;
+    left: 35vw;
+    width:400px;
+    border-radius: 12px;
+    height: 60px;
+    text-align:center;
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 10px;
+    
+}
+
+.belief{
+    padding-top:105px;
+    text-align: center;
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 40px;
+    color:#081B2E
+}
+.beliefs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.beliefs div {
+    flex: 1;
+    text-align: center;
+  }
+  
+.beliefs img {
+    max-width: 100%;
+    padding-top:50px ; 
+    padding-bottom:50px
+  }
+.about{
+    display: flex;
+    margin-top: 30px;
+    padding-top: 70px;
+    background-color: #081B2E;
+}  
+.about img{
+    max-width: 100%;
+    height: max-content;
+    padding-left: 50px;
+
+}
+.about p{
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 40px;
+    color:#388FE4;
+    padding-left: 150px;
+    margin-top: 0px ;
+
+}
+.about pre{
+    color:#ffffff;
+    font-size: 20px;
+    font-family: 'Sansita', sans-serif;
+    margin-top :10px
+}
+.contact{
+    background-color: #BDA0CB;
+    height:290px;
+    align-items: center;
+    text-decoration: none;
+    border: 5px solid #081B2E;
+    border-radius: 20px;
+    
+
+
+}
+.contact p{
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 40px;
+    color:#081B2E;
+    padding-bottom: 0px;
+
+    text-align: center;
+}
+
+.contact img{ 
+   text-align: center;
+
+
+}
+.emergency{
+    text-align: center;
+}
+.emergency a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    border: 4px solid #081B2E;
+    border-radius:15px ;
+    font-size: 30px; 
+    padding: 5px;
+    background-color: #ff0000;
+    margin-top: -20px;
+
+
+}
+
+.icons a{
+    margin-right:30px;
+    margin-left:50px;
+    display: inline-block
+}
+.icons{
+    margin-top:-20px;
+    text-align: center;
+}
+.team{
+    font-size: 18px;
+    text-align: center;
+    color: #081B2E;
+}
+.team a{
+    font-size: 18px;
+    text-align: center;
+    color: #081B2E;
+    cursor: pointer;}

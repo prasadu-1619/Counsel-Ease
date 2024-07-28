@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="container">
+        <img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" >
+        <ul>
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li><a href="{{ url_for('static', filename='explore.html')}}">SERVICES</a></li>
+            <li><a href="{{ url_for('static', filename='joinourteam.html')}}">JOIN OUR TEAM</a></li>
+            <li><a href="{{ url_for('static', filename='faq.html')}}">FAQ</a></li>
+            <li><a href="{{ url_for('static', filename='developers.html')}}">DEVELOPERS</a></li>
+            {% if 'user' in session %}
+                <li><a href="{{ url_for('logout') }}">LOGOUT</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <div class="prev"><a href="appointments">Previous Meetings</a></div>
+       <div class="cont1">
+    <h2>Welcome, <div class="name">{{ first_name }} {{ last_name }}</div></h2>
+    <h3>Book Appointment</h3>
+    <form action="/book_appointment" method="post">
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="time">Time :</label>
+        <select id="time" name="time" required>
+            <option value="09:00">09:00 AM</option>
+            <option value="09:30">09:30 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="10:30">10:30 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="11:30">11:30 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="12:30">12:30 PM</option>
+            <option value="13:00">01:00 PM</option>
+            <option value="13:30">01:30 PM</option>
+            <option value="14:00">02:00 PM</option>
+            <option value="14:30">02:30 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="15:30">03:30 PM</option>
+            <option value="16:00">04:00 PM</option>
+            <option value="16:30">04:30 PM</option>
+            <option value="17:00">05:00 PM</option>
+            <option value="17:30">05:30 PM</option>
+            <option value="18:00">06:00 PM</option>
+            <option value="18:30">06:30 PM</option>
+            <option value="19:00">07:00 PM</option>
+            <option value="19:30">07:30 PM</option>
+            <option value="20:00">08:00 PM</option>
+            <option value="20:30">08:30 PM</option>
+        </select><br><br>
+        
+        
+        <label for="counselor">Choose a Counsellor :</label>
+        <select id="counselor" name="counselor" required>
+            <option value="Counsellor 1">Counsellor 1</option>
+            <option value="Counsellor 2">Counsellor 2</option>
+            <option value="Counsellor 3">Counsellor 3</option>
+            <!-- Add more counselors as needed -->
+        </select><br><br>
+        
+        <input type="submit" value="Book Appointment"></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email OTP Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='verify_otp.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="container">
+        <img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" >
+          <ul>
+            <li><a href="home">HOME</a></li>
+            <li><a href="{{ url_for('static', filename='explore.html')}}">SERVICES</a></li>
+            <li><a href="{{ url_for('static', filename='joinourteam.html')}}">JOIN OUR TEAM</a></li>
+            <li><a href="{{ url_for('static', filename='faq.html')}}">FAQ</a></li>
+            <li><a href="{{ url_for('static', filename='developers.html')}}">DEVELOPERS</a></li>
+            <li><a href="login">LOGIN</a></li>
+          </ul>
+       </nav>
+    <div class="cont1"><h2>Email OTP Verification</h2>
+    <p>Please enter the OTP sent to your email to verify your account.</p>
+    <form method="POST" action="/verify_otp">
+        <label for="otp">Enter OTP Here :</label>
+        <input type="text" id="otp" name="otp"  placeholder="Enter OTP">
+        <button type="submit">Verify OTP</button>
+    </form></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav class="container">
+      <img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" >
+        <ul>
+          <li><a href="home">HOME</a></li>
+          <li><a href="{{ url_for('static', filename='explore.html')}}">SERVICES</a></li>
+          <li><a href="{{ url_for('static', filename='joinourteam.html')}}">JOIN OUR TEAM</a></li>
+          <li><a href="{{ url_for('static', filename='faq.html')}}">FAQ</a></li>
+          <li><a href="{{ url_for('static', filename='developers.html')}}">DEVELOPERS</a></li>
+          <li><a href="login">LOGIN</a></li>
+        </ul>
+     </nav>
+     <div class="container1">
+        <div class="account">Create an Account<div>
+          <form id="signupForm" action="/signup" method="POST">
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{10}" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="password" id="password" name="password" placeholder=" Create Password" minlength="8" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+          <span id="showPassword" class="eye"></span>
+          <input type="text" id="collegeName" name="collegeName" placeholder="College Name" required>
+          <input type="text" id="collegeRegNo" name="collegeRegNo" placeholder="College Registration No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. I2K231196" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="already">Already have an account ? <a href="login">Login</a></div>
+        <img src="{{ url_for('static', filename='3d.svg') }}" class="threeDImage" alt="3D Image">
+      </div>
+      <script src="{{ url_for('static', filename='signup.js') }}"></script>
+</body>
+</html>
