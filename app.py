@@ -7,7 +7,6 @@ import pyotp
 import datetime
 import time
 import os
-import signal
 import sys
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
