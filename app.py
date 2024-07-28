@@ -16,6 +16,8 @@ import base64
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
+from urllib.parse import quote_plus as url_quote
+
 appointment_list=[]
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
