@@ -1,5 +1,4 @@
 Flask==2.2.3
-sqlite3
 flask_mail==0.9.1
 pyotp==2.6.0
 google-auth==2.20.0
