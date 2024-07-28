@@ -42,22 +42,20 @@ SCOPES = ['https://www.googleapis.com/auth/calendar',
 def authenticate_google():
     creds = None
 
-    # Check if token.json exists and if it's valid
     if os.path.exists('token.json'):
         creds = Credentials.from_authorized_user_file('token.json')
 
-    # If token is invalid or expired, reauthorize
     if not creds or not creds.valid:
-        # Remove existing token file
         if os.path.exists('token.json'):
             os.remove('token.json')
-        
-        # Run the OAuth flow to obtain new credentials
+
         flow = InstalledAppFlow.from_client_secrets_file(
             'credentials.json', SCOPES)
-        creds = flow.run_local_server(port=0)
+        
+        # Use the environment variable or default to a local URI
+        redirect_uri = os.getenv('GOOGLE_OAUTH_REDIRECT_URI', 'http://localhost:5000/oauth2callback')
+        creds = flow.run_local_server(port=0, redirect_uri=redirect_uri)
 
-        # Save the new credentials to token.json
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
 
@@ -65,6 +63,11 @@ def authenticate_google():
 
 # Obtain Google credentials
 creds = authenticate_google()
+
+@app.route('/oauth2callback')
+def oauth2callback():
+    # Handle the OAuth2 callback and token exchange
+    pass
 
 
 # Function to create a connection to the SQLite database
